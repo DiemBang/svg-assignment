@@ -236,19 +236,19 @@
         yoyo: true,
       });
       gsap.to(".fade", {
-        opacity: 0, // Start with opacity 0
+        opacity: 0,
         duration: 1, // Duration of fade in and out
         ease: "power1.inOut",
         repeat: -1, // Repeat indefinitely
-        yoyo: true, // Reverse the animation to create the fade in and out effect
+        yoyo: true, 
       });
       gsap.to("#Main_Puddle, #Puddle", {
-        scaleX: 1.02, // Adjust the horizontal scale for a subtle stretching effect
-        scaleY: 0.98, // Adjust the vertical scale for a subtle compression effect
-        duration: 2, // Duration of each puddle animation
-        ease: "power1.inOut", // Easing function for smooth motion
+        scaleX: 1.02, 
+        scaleY: 0.98,
+        duration: 2, 
+        ease: "power1.inOut", 
         repeat: -1, // Repeat the animation indefinitely
-        yoyo: true, // Alternate between stretching and compressing
+        yoyo: true, 
       });
       function blinkPuddle() {
         const puddle = document.querySelectorAll("#Strokes, #Blobs");
